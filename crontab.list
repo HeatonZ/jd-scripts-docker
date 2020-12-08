@@ -36,7 +36,7 @@
 # 京东汽车(签到满500赛点可兑换500京豆)
 33 2 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_car.js | sed 's/^/ 【京东汽车】/'; "
 # 领京豆额外奖励(每日可获得3京豆)
-33 4 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_baen_home.js | sed 's/^/ 【领京豆额外奖励】/'; "
+33 4 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_bean_home.js | sed 's/^/ 【领京豆额外奖励】/'; "
 
 
 56 7 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_split.js | sed 's/^/ 【金榜年终奖】/'; "
@@ -46,6 +46,6 @@
 # 健康抽奖机(2020.12.31活动过期)
 10 0 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_health.js | sed 's/^/ 【健康抽奖机】/'; "
 # 直播红包雨(2020.12.12活动过期)
-0 0,9,11,13,15,17,19,20,21,23 * * * bash -c exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_live_redrain.js | sed 's/^/ 【直播红包雨】/'; "
+0 0,9-23/2,20 * * * bash -c exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_live_redrain.js | sed 's/^/ 【直播红包雨】/'; "
 # 数码加购京豆(会加3-4个商品到购物车🛒，介意者勿用 , 2020.12.11活动过期)
 8 0 * * * bash -c exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_digital_floor.js | sed 's/^/ 【数码加购京豆】/'; "

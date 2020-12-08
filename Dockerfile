@@ -9,6 +9,7 @@ RUN date
 RUN apt update && apt install -y cron openssl coreutils git wget tzdata moreutils \
         && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
         && echo "Asia/Shanghai" > /etc/timezone
+        && echo "CRON_TZ=Asia/Shanghai" >> /etc/crontab
 RUN apt update && apt install -y nodejs
 RUN apt update && apt install -y npm
 WORKDIR /

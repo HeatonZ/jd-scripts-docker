@@ -6,7 +6,7 @@ RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selectio
 
 RUN date
 
-RUN apt update && apt install -y cron openssl coreutils git wget tzdata moreutils \
+RUN apt update && apt install -y cron openssl coreutils git wget tzdata moreutils vim \
         && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
         && echo "Asia/Shanghai" > /etc/timezone \
         && echo "CRON_TZ=Asia/Shanghai" >> /etc/crontab

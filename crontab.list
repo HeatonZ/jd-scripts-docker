@@ -38,7 +38,7 @@
 # 领京豆额外奖励(每日可获得3京豆)
 33 4 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_bean_home.js | sed 's/^/ 【领京豆额外奖励】/'; "
 # qqread
-0/11 * * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport;source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/backUp/qqread.js | sed 's/^/ 【qq阅读】/'; "
+*/11 * * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport;source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/backUp/qqread.js | sed 's/^/ 【qq阅读】/'; "
 
 56 7 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_split.js | sed 's/^/ 【金榜年终奖】/'; "
 10 * * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_jxstory.js | sed 's/^/ 【京喜故事】/'; "

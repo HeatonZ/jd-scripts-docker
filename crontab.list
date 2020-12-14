@@ -41,9 +41,12 @@
 10-20/5 11 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_live.js | sed 's/^/ 【京东直播】/'; "
 # qqread
 */11 * * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport;source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/backUp/qqread.js | sed 's/^/ 【qq阅读】/'; "
+# 京东金融签到
+10 6 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport;source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/backUp/jr_sign.js | sed 's/^/ 【京东金融签到】/'; "
 
-40 8 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_ms_redrain.js | sed 's/^/ 【秒杀红包雨】/'; "
 # 秒杀红包雨(2020.12.31活动过期)
+40 8 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_ms_redrain.js | sed 's/^/ 【秒杀红包雨】/'; "
 # 健康抽奖机(2020.12.31活动过期)
 10 0 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_health.js | sed 's/^/ 【健康抽奖机】/'; "
-8 1,11,20 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_pubg.js | sed 's/^/ 【pubg】/'; "
+# jd_apple_live
+8 0,20 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_apple_live.js | sed 's/^/ 【jd_apple_live】/'; "

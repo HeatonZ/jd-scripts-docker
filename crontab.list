@@ -42,17 +42,8 @@
 # qqread
 */11 * * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport;source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/backUp/qqread.js | sed 's/^/ 【qq阅读】/'; "
 
-56 7 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_split.js | sed 's/^/ 【金榜年终奖】/'; "
-10 * * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_jxstory.js | sed 's/^/ 【京喜故事】/'; "
 40 8 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_ms_redrain.js | sed 's/^/ 【秒杀红包雨】/'; "
 # 秒杀红包雨(2020.12.31活动过期)
 # 健康抽奖机(2020.12.31活动过期)
 10 0 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_health.js | sed 's/^/ 【健康抽奖机】/'; "
-# 直播红包雨(2020.12.12活动过期)
-0,1 0,9-23/2,20 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_live_redrain.js | sed 's/^/ 【直播红包雨】/'; "
-# 数码加购京豆(会加3-4个商品到购物车🛒，介意者勿用 , 2020.12.11活动过期)
-8 0 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_digital_floor.js | sed 's/^/ 【数码加购京豆】/'; "
-# PUBG 2020.12.13活动过期)
-8 1,20 1-13 12 * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_pubg.js | sed 's/^/ 【pubg】/'; "
-# jd_apple_live
-8 0,20 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_apple_live.js | sed 's/^/ 【jd_apple_live】/'; "
+8 1,11,20 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_pubg.js | sed 's/^/ 【pubg】/'; "

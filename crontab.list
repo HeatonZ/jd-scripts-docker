@@ -46,7 +46,7 @@
 #宠汪汪邀请助力
 10 10,11 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_joy_run.js | sed 's/^/ 【宠汪汪邀请助力】/'; "
 # 京东看一看
-40 9,10 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_watch.js | sed 's/^/ 【京东看一看】/'; "
+14 11,14 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_watch.js | sed 's/^/ 【京东看一看】/'; "
 
 # 京东金融签到
 10 6 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jr_sign.js | sed 's/^/ 【京东金融签到】/'; "

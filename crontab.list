@@ -40,7 +40,7 @@
 # 京东直播(每日18豆)
 10-20/5 11 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_live.js | sed 's/^/ 【京东直播】/'; "
 # qqread
-*/11 * * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport;source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/backUp/qqread.js | sed 's/^/ 【qq阅读】/'; "
+# */11 * * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport;source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/backUp/qqread.js | sed 's/^/ 【qq阅读】/'; "
 #微信小程序京东赚赚
 10 11 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_jdzz.js | sed 's/^/ 【微信小程序京东赚赚】/'; "
 #宠汪汪邀请助力

@@ -49,7 +49,7 @@
 14 11,14 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_watch.js | sed 's/^/ 【京东看一看】/'; "
 
 # crazyJoy自动每日任务
-10 7 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_crazy_joy.js | sed 's/^/ 【crazy_joy】/'
+10 7 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_crazy_joy.js | sed 's/^/ 【crazy_joy】/'; "
 # 京东金融签到
 10 6 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jr_sign.js | sed 's/^/ 【京东金融签到】/'; "
 # 秒杀红包雨(2020.12.31活动过期)

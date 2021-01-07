@@ -30,7 +30,7 @@
 36 * * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_jdfactory.js | sed 's/^/ 【东东工厂】/'; "
 36 8,18 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_syj.js | sed 's/^/ 【十元街】/'; "
 # 京东代属(注:限校园用户可使用)
-36 9 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_ds.js | sed 's/^/ 【京东代属】/'; "
+# 36 9 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_ds.js | sed 's/^/ 【京东代属】/'; "
 # 京东快递签到
 23 1 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_kd.js | sed 's/^/ 【京东快递签到】/'; "
 # 京东汽车(签到满500赛点可兑换500京豆)
@@ -49,8 +49,8 @@
 14 11,14 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_watch.js | sed 's/^/ 【京东看一看】/'; "
 # crazyJoy自动每日任务
 10 7 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_crazy_joy.js | sed 's/^/ 【crazy_joy】/'; "
+# 京东汽车旅程赛点兑换金豆
+3 0 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_crazy_joy.js | sed 's/^/ 【京东汽车旅程赛点兑换金豆】/'; "
 
 # 健康抽奖机(2020.12.31活动过期)
 10 0 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_health.js | sed 's/^/ 【健康抽奖机】/'; "
-# 京东健康APP集汪汪卡瓜分百万红包(2021.1.6活动过期)
-10 8 * * *  bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_jdh.js | sed 's/^/ 【直播红包雨】/'; "

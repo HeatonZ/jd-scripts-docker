@@ -50,8 +50,7 @@
 # 京东汽车旅程赛点兑换金豆
 3 0 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_crazy_joy.js | sed 's/^/ 【京东汽车旅程赛点兑换金豆】/'; "
 # 导到所有互助码jd_get_share_code
-47 7 * * *  bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_get_share_code.js | sed 's/^/ 【# 导到所有互助码
-】/'; "
+47 7 * * *  bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_get_share_code.js | sed 's/^/ 【# 导到所有互助码】/'; "
 # 口袋书店jd_bookshop
 12 8,12,18 * * *  bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node /scripts/jd_bookshop.js | sed 's/^/ 【口袋书店】/'; "
 # 京喜农场jd_jxnc

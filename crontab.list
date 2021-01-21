@@ -67,3 +67,5 @@
 50 * * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env;  cd /scripts; node /scripts/jd_nianCollect.js | sed 's/^/ 【专门收集每秒产生的爆竹】/'; "
 #京东神仙书院(活动时间:2021-1-20至2021-2-5)
 30 6 * * *  bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env;  cd /scripts; node /scripts/jd_immortal.js | sed 's/^/ 【京东神仙书院】/'; "
+#京东鞭炮
+52 9 * * *  bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env;  cd /scripts; node /scripts/jd_firecrackers.js | sed 's/^/ 【京东鞭炮】/'; "
